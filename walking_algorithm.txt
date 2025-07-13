@@ -1,0 +1,21 @@
+Algorithm Steps:
+
+1. Initialize all servos to a standing position.    (Both legs straight, body balanced vertically, feet flat.)
+
+2. Shift the body weight slightly to the right leg. (Move the center of mass above the right leg to free the left leg.)
+
+3. Lift the left leg by bending the left hip and knee servos.
+
+4. Move the left leg forward using the hip servo.
+
+5. Lower the left leg back to the ground            (place the foot flat).
+
+6. Shift the body weight to the left leg.           (Now the center of mass is above the left leg.)
+
+7. Lift the right leg by bending the right hip and knee servos.
+
+8. Move the right leg forward using the hip servo.
+
+9. Lower the right leg back to the ground.
+
+10. Repeat steps 2–9 for continuous walking.
