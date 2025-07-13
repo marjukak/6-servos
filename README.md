@@ -74,3 +74,70 @@ void loop() {
     servo6.write(90);
   }
 }
+
+
+
+
+
+
+
+
+
+Task: Write an Algorithm for Humanoid Robot Walking Motion
+For this task, I was asked to write a step-by-step algorithm that explains how a humanoid robot can perform a walking motion. The goal was to break down the walk cycle into a clear set of servo-controlled movements that alternate between the left and right legs, while keeping the body balanced.
+
+What I Did:
+ 1. Starting Position
+The algorithm begins by setting the robot in a neutral standing pose where:
+Both legs are straight
+The body is upright and balanced
+Feet are flat on the ground
+
+ 2. Shifting Weight
+Before taking a step, the robot needs to shift its weight.
+I instructed it to shift its center of mass over the right leg so the left leg becomes free to move.
+
+ 3. Left Leg Step
+Once the weight is on the right side:
+The robot lifts the left leg by bending the left hip and knee.
+It then moves the left leg forward using the hip servo.
+Finally, it places the foot flat on the ground in a forward position.
+
+ 4. Repeat on Right Side
+After placing the left leg forward:
+The robot shifts its weight to the left leg.
+Then it lifts the right leg, moves it forward, and places it down.
+
+ 5. Loop for Walking
+To keep walking, the robot simply repeats the left-right stepping sequence in a loop.
+
+
+Final Algorithm I Wrote:
+
+1. Initialize all servos to a standing position.    
+   (Both legs straight, body balanced vertically, feet flat.)
+
+2. Shift the body weight slightly to the right leg. 
+   (Move the center of mass above the right leg to free the left leg.)
+
+3. Lift the left leg by bending the left hip and knee servos.
+
+4. Move the left leg forward using the hip servo.
+
+5. Lower the left leg back to the ground (place the foot flat).
+
+6. Shift the body weight to the left leg.
+   (Now the center of mass is above the left leg.)
+
+7. Lift the right leg by bending the right hip and knee servos.
+
+8. Move the right leg forward using the hip servo.
+
+9. Lower the right leg back to the ground.
+
+10. Repeat steps 2–9 for continuous walking.
+
+    
+Reflection:
+This task helped me think logically about how balance and movement work together in robotics. I learned how walking isn’t just about lifting legs—it’s about weight shifting, servo coordination, and timing. Writing the steps clearly helped me understand how motion planning works for humanoid robots.
+
